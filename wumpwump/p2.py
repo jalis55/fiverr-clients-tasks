@@ -1,14 +1,8 @@
 
 def largest_factor(num):
 
-    factor_lst=[]
-
-    for i in range(1,num):
+    for i in range(num-1,0,-1):
         if num%i==0:
-            factor_lst.append(i)
+            return i
         
-    return factor_lst[-1]
-
-
-
-print(largest_factor(12))
+print(largest_factor(125))
