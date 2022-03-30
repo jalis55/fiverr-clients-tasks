@@ -17,7 +17,7 @@ def main():
             score=int(line.rstrip('\n'))
 
             if score >=SCORES:
-                print("{0:20}  {1}".format(player, score))
+                print("%-20s %s "%(player,score))
             line=file.readline()
         
         file.close()
