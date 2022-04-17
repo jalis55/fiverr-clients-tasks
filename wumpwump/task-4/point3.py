@@ -1,5 +1,5 @@
 # point3.py
-
+import math
 """Provide the Point class."""
 
 class Point:
@@ -34,6 +34,13 @@ class Point:
         """Return self == other."""
         return self.__x == other.__x \
             and self.__y == other.__y
+    def get_distance(self,other):
+        distance=math.sqrt((self.__x - other.__x)**2 + (self.__y - other.__y)**2)
+        return distance
+    def move(self,dx,dy):
+        self.__x=self.__x+dx
+        self.__y=self.__y+dy
+        # return (self.__x,self.__y)
 
     def __str__(self):
         """Create a string representation in format (%.2f, %.2f)."""
