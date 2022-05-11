@@ -12,9 +12,3 @@ lst.append(Book('c programming',5))
 for i in lst:
     i.display()
 
-for i in lst:
-    if i.book_name=='java 1':
-        i.book_qty -=1
-
-for i in lst:
-    i.display()

@@ -1,0 +1,24 @@
+userbase:
+  users:
+    - login: user1
+      first_name: User1
+      last_name: User1
+      groups:
+        - admin
+        - db
+        - developer
+    - login: user2
+      first_name: User2
+      last_name: User2
+      groups:
+        - admin
+    - login: user3
+      first_name: user3
+      last_name: user3
+      groups:
+        - admin
+        - db
+        - developer
+        - manager
+          
+
